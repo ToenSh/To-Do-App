@@ -1,0 +1,52 @@
+footer {
+  text-align: center;
+}
+
+.sort {
+  color: var(--Completed-Color);
+  width: 319px;
+  background-color: var(--To-Dos-Background);
+  border-radius: 0.35rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.175);
+  -moz-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.175);
+  @media (min-width: 500px) {
+    min-width: 450px;
+  }
+  @media (min-width: 800px) {
+    min-width: 550px;
+  }
+}
+
+.sorting {
+  cursor: pointer;
+  background: none;
+  border-style: none;
+  color: var(--Completed-Color);
+  font-family: "Josefin Sans", serif;
+  @media (min-width: 800px) {
+    font-size: 1.05rem;
+  }
+}
+
+.sorting:hover {
+  color: var(--Hover-Color);
+}
+
+.sorting:focus {
+  color: var(--Bright-Blue);
+}
+
+.dragDrop {
+  color: var(--Completed-Color);
+  font-size: 0.9rem;
+  @media (min-width: 800px) {
+    font-size: 1rem;
+  }
+}

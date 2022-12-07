@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html data-theme="dark-theme" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"
+        integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="script.js"></script>
+    <title>To Do App</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <header class="header">
+            <div class="head">
+                <h1>TODO</h1>
+                <img src="./images/icon-sun.svg" alt="switch to light theme" class="sun-icon">
+                <img src="./images/icon-moon.svg" alt="switch to dark theme" class="moon-icon">
+            </div>
+        </header>
+
+        <section class="content">
+
+            <div class="inp-field">
+                <label for="to-do-inp">
+                    <input type="text" name="to-do" id="to-do-inp" placeholder="Create a new todo...">
+                </label>
+            </div>
+
+
+            <ul class="to-dos">
+                <li>
+                    <span class="items-left">0 items left</span>
+                    <span class="clear-completed">Clear Completed</span>
+                </li>
+            </ul>
+
+            <footer>
+
+                <div class="sort">
+                    <button class="sort__all sorting">All</button>
+                    <button class="sort__active sorting">Active</button>
+                    <button class="sort__completed sorting">Completed</button>
+                </div>
+
+                <span class="dragDrop">Drag and drop to reorder list</span>
+            </footer>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
